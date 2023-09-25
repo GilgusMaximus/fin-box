@@ -7,7 +7,9 @@ function update_system {
 function install_tooling {
     yum install -y curl
     yum install -y nano
+    yum install -y git
     yum module install -y nodejs:18
+    npm install --global yarn
 }
 
 echo "Updating system..."
